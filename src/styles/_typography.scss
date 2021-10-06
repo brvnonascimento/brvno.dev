@@ -1,0 +1,76 @@
+@import '@fontsource/montserrat';
+
+body {
+	font-family: Montserrat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+	color: var(--color-text-primary);
+}
+
+@mixin heading-1() {
+	font-size: var(--font-size-heading-1);
+	line-height: 1.548;
+}
+
+h1 {
+	@include heading-1;
+	color: var();
+}
+
+@mixin heading-2() {
+	font-size: var(--font-size-heading-2);
+	line-height: 1.576;
+}
+
+h2 {
+	@include heading-2;
+}
+
+@mixin heading-3() {
+	font-size: var(--font-size-heading-3);
+	line-height: 1.615;
+}
+
+h3 {
+	@include heading-3;
+}
+
+@mixin heading-4() {
+	font-size: var(--font-size-heading-4);
+	line-height: 1.65;
+}
+
+h4 {
+	@include heading-4;
+}
+
+@mixin heading-5() {
+	font-size: var(--font-size-heading-5);
+	line-height: 1.688;
+}
+
+h5 {
+	@include heading-5;
+}
+
+@mixin heading-6() {
+	font-size: var(--font-size-heading-6);
+	line-height: 1.769;
+}
+
+h6 {
+	@include heading-6;
+}
+
+p {
+	font-size: var(--font-size-normal);
+	line-height: 1.688;
+}
